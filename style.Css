@@ -1,0 +1,47 @@
+
+
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap : 10px;
+
+}
+.box{
+    background-color:chocolate;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2);
+    max-width: 60%;
+    text-align: center;
+    overflow: hidden;
+
+}
+.box-container{
+ display: flex;
+ justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+} 
+
+.box-container img{
+    height: 80%;
+    object-fit: cover;
+
+   
+}
+
+
+@media screen and (max-width: 700px) {
+    .container{
+          flex-direction: column;
+    }
+
+        .box{
+      background-color: rgb(111, 218, 182);
+      width: 90%;  
+    }
+
+    .box-container{
+       flex-direction: column;
+    }
+}
